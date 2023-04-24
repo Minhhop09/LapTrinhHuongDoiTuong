@@ -1,0 +1,27 @@
+package bai1b;
+
+import java.time.LocalDate;
+
+import bai1a.Vehicle;
+/*import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+*/
+public class Main {
+    public static void main(String[] args) {
+        /*Scanner scanner = new Scanner(System.in);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");*/
+    	
+        // Tạo đối tượng 1
+        HangThucPham hang1 = new HangThucPham("001", "Gao ", 100000, LocalDate.of(2018, 7, 10), LocalDate.of(2025, 7, 10));
+        System.out.println(hang1.toString());
+
+        // Tạo đối tượng 2
+        HangThucPham hang2 = new HangThucPham("002", "Mi", 5000, LocalDate.of(2018, 3, 1), LocalDate.of(2025, 9, 1));
+        System.out.println(hang2.toString());
+        
+
+        // Tạo đối tượng 3
+        HangThucPham hang3 = new HangThucPham("003", "Nuoc", 10000, LocalDate.of(2017, 3, 1), LocalDate.of(2019, 3, 1));
+        System.out.println(hang3.toString());
+}
+}
